@@ -1,0 +1,294 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3105358541806363132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3105358541806363133}
+  - component: {fileID: 3105358541806363130}
+  - component: {fileID: 3105358541806363131}
+  - component: {fileID: 3105358541806363128}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3105358541806363133
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3105358541806363132}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7350654533984090527}
+  - {fileID: 7350654533882659109}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3105358541806363130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3105358541806363132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cc7a9d20578740edbc348fb059da6b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RawMaterialDialogue: {fileID: 0}
+  BankBalanceDialogue: {fileID: 0}
+  CycleComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  AvailableCustomerList:
+  - Name: Default Customer 1
+    Quantity: 283
+    Cost: 28300
+    Rating: 5
+    orderType: 0
+  - Name: Default Customer 2
+    Quantity: 235
+    Cost: 23500
+    Rating: 5
+    orderType: 0
+  - Name: Default Customer 3
+    Quantity: 213
+    Cost: 21300
+    Rating: 5
+    orderType: 0
+  - Name: Default Customer 4
+    Quantity: 114
+    Cost: 11400
+    Rating: 5
+    orderType: 0
+  - Name: Default Customer 5
+    Quantity: 272
+    Cost: 27200
+    Rating: 5
+    orderType: 0
+  - Name: Default Customer 6
+    Quantity: 125
+    Cost: 12500
+    Rating: 5
+    orderType: 0
+  AvailableSupplierList:
+  - Name: Default Supplier 1
+    RawMaterials: 165
+    Cost: 1650
+    Rating: 5
+    orderType: 0
+  - Name: Default Supplier 2
+    RawMaterials: 204
+    Cost: 2040
+    Rating: 5
+    orderType: 0
+  - Name: Default Supplier 3
+    RawMaterials: 205
+    Cost: 2050
+    Rating: 5
+    orderType: 0
+  - Name: Default Supplier 4
+    RawMaterials: 219
+    Cost: 2190
+    Rating: 5
+    orderType: 0
+  - Name: Default Supplier 5
+    RawMaterials: 171
+    Cost: 1710
+    Rating: 5
+    orderType: 0
+  - Name: Default Supplier 6
+    RawMaterials: 147
+    Cost: 1470
+    Rating: 5
+    orderType: 0
+  - Name: Default Supplier 7
+    RawMaterials: 103
+    Cost: 1030
+    Rating: 5
+    orderType: 0
+--- !u!114 &3105358541806363131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3105358541806363132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ce7ab6dec8494d02a5bd6255b05d5ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFactoryOperational: 0
+  isRawMaterialAvailable: 0
+  isInventoryFull: 0
+--- !u!114 &3105358541806363128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3105358541806363132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a094a5f94064433993f9511cde63ece, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clockText: {fileID: 0}
+  GameClock: {fileID: 0}
+  ClockAMPM: AM
+  ClockSpeedMultiplier: 1000
+  addDay: 1
+  startTimer: 0
+  currentDate: 
+  GameYears: 0
+--- !u!1 &7350654533882659110
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7350654533882659109}
+  - component: {fileID: 7350654533882659108}
+  - component: {fileID: 3105358543299939308}
+  m_Layer: 0
+  m_Name: SupplierManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7350654533882659109
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7350654533882659110}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3105358541806363133}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7350654533882659108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7350654533882659110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3a7704dc0803461c8d17b556136126c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 3105358541806363130}
+  uiManager: {fileID: 0}
+  newSupplier:
+    Name: Default Supplier
+    RawMaterials: 0
+    Cost: 0
+    Rating: 1
+    orderType: 0
+--- !u!114 &3105358543299939308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7350654533882659110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af1622657e1347c09d6d23d02c74bdaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  supplierStatements: []
+  supplierStatementObjects_List: []
+  supplierStatement_Prefab: {fileID: 2372336046083763610, guid: e4adac8eeedd3468fa9c4e7ad6b3fe39, type: 3}
+  supplierStatement_Parent: {fileID: 0}
+--- !u!1 &7350654533984090592
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7350654533984090527}
+  - component: {fileID: 7350654533984090526}
+  - component: {fileID: 7350654533625197722}
+  m_Layer: 0
+  m_Name: CustomerManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7350654533984090527
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7350654533984090592}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3105358541806363133}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7350654533984090526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7350654533984090592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a49293ff5200e4f57994079711ca3405, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 3105358541806363130}
+  uiManager: {fileID: 0}
+  newCustomer:
+    Name: Default Customer
+    Quantity: 0
+    Cost: 0
+    Rating: 1
+    orderType: 0
+--- !u!114 &7350654533625197722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7350654533984090592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8073030b6fea48929c364e72d4cb5bd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CustomerStatementObjects_List: []
+  customerStatement_Prefab: {fileID: 2372336046083763610, guid: 82b444a3f57db41d488e71b33700875d, type: 3}
+  customerStatement_Parent: {fileID: 0}
